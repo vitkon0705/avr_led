@@ -1,0 +1,35 @@
+<circuit version="1.1.0" rev="1912+dfsg-4build2" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Voltimeter" CircId="Voltimeter-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-224,-4" rotation="0" hflip="1" vflip="-1" label="Voltimeter-7" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,-4" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-124,-84" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="300 Ω" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-10" mainComp="false" Show_id="false" Show_Val="false" Pos="-196,-80" rotation="0" hflip="-1" vflip="1" label="Amperimeter-10" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,-44" rotation="90" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="MCU" CircId="mega8-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-84,-100" rotation="0" hflip="1" vflip="1" label="mega8-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="main.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" SerialMon="-1" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="-156,-20" />
+
+<item itemtype="Node" CircId="Node-9" mainComp="false" Pos="-104,-84" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Resistor-3-rPin" endpinid="Node-9-0" pointList="-108,-84,-104,-84" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Resistor-3-lPin" endpinid="Amperimeter-10-lPin" pointList="-140,-84,-140,-100,-164,-100,-164,-64,-188,-64" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Led-4-rPin" endpinid="Node-8-0" pointList="-156,-28,-156,-20" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Node-9-2" endpinid="mega8-1-PORTD0" pointList="-104,-84,-92,-84" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Node-8-2" endpinid="Ground-6-Gnd" pointList="-156,-20,-156,-20" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Voltimeter-7-lPin" endpinid="Node-9-1" pointList="-232,-20,-232,-112,-104,-112,-104,-84" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Voltimeter-7-rPin" endpinid="Node-8-1" pointList="-216,-20,-156,-20" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Amperimeter-10-rPin" endpinid="Led-4-lPin" pointList="-204,-64,-204,-60,-156,-60" />
+
+</circuit>

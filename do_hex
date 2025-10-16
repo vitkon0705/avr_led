@@ -1,0 +1,3 @@
+avr-gcc -c -Os -mmcu=atmega8 -DF_CPU=8000000UL -o main.o main.c && \
+avr-gcc -mmcu=atmega8 -o main.elf main.o && \
+avr-objcopy -O ihex -R .eeprom main.elf main.hex
